@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .main-container {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,4 +24,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+li.complete:hover {
+  opacity: 1;
+}
+
+button {
+  cursor: pointer;
 }
